@@ -42,8 +42,22 @@
                         <p class="c-form-field">
                             <label class="c-label" for="password">
 								Password								
-                            </label>                            
-                            <input class="c-input" type="password" name="password" id="password" required>
+                            </label>  
+                            <span class="c-password-toggle-container">
+                                <input class="c-input" type="password" name="password" id="password" required>
+
+                                <span class="c-password-toggle">
+
+                                    <!-- Input (om te togglen) -->
+                                    c-password-toggle__checkbox js-password-toggle
+
+                                    <!-- label (met twee SVGs er in) -->
+                                    c-password-toggle__label
+
+                                        <!-- twee keer een svg, voorzie een modifier -->
+                                        c-password-toggle__symbol
+                                </span>
+                            </span>
                         </p>
                         <!-- Custom checkbox -->
                         <p class="c-form-field c-form-field--option">
